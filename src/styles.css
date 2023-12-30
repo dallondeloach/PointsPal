@@ -1,3 +1,16 @@
-#frontLogo {
-  width: 30px;
-  height: 30px; }
+.banner-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#frontLogo{
+  width: 100px;
+  height: 100px;
+}
+
+#banner-text{
+  color: black;
+}
