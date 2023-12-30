@@ -1,0 +1,15 @@
+{
+  "name": "pointspal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/styles.scss src/styles.css"
+  },
+  "dependencies": {
+    "sass":"^1.69.6"
+  },
+  "author": "",
+  "license": "ISC"
+}
