@@ -16,3 +16,19 @@
   color: black;
   font-family: "Papyrus", fantasy;
 }
+
+.top-banner, .bottom-banner{
+  background-color: #0852A5;
+  padding: 10px;
+  position: fixed;
+  height: 20px;
+  width: 100%;
+}
+
+.top-banner{
+  top: 0;
+}
+
+.bottom-banner{
+  bottom: 0;
+}
