@@ -32,3 +32,26 @@
 .bottom-banner{
   bottom: 0;
 }
+
+.form-container{
+  position: relative;
+  left: 200px;
+  outline: none;
+}
+
+.form-input{
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+.form-input::placeholder{
+  opacity: 0.7;
+  color: gray;
+}
+
+.no-outline:focus{
+  outline: none;
+}
