@@ -33,9 +33,9 @@
   bottom: 0;
 }
 
-.form-container{
+.top-container{
   position: relative;
-  left: 200px;
+  left: 250px;
   outline: none;
 }
 
@@ -45,6 +45,7 @@
   font-size: 16px;
   border: none;
   border-bottom: 2px solid gray;
+  width:400px;
 }
 
 .form-input::placeholder{
