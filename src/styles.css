@@ -56,3 +56,56 @@
 .no-outline:focus{
   outline: none;
 }
+
+.route-container{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.route-label{
+  margin-bottom: 10px;
+}
+
+.dropdown-btn{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top:100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.route-type-item{
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.dropdown-content.show{
+  display: block;
+}
+
+.selected-option{
+  display: none;
+}
+
+.selected-option.show{
+  display: block;
+}
+
+.animate-in{
+ animation: fadeIn 0.5s; 
+}
+
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
