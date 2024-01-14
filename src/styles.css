@@ -59,18 +59,18 @@
 
 .route-container{
   position: relative;
-  margin-bottom: 20px;
+  margin: 50px auto;
+  width: 200px;
 }
 
-.route-label{
-  margin-bottom: 10px;
-}
-
-.dropdown-btn{
-  width: 100%;
+.route-label, .route-type-item{
   padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 10px;
   cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .dropdown-content{
@@ -81,31 +81,14 @@
   width: 100%;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
 }
 
-.route-type-item{
-  padding: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
+.route-type-item:hover{
+  background-color: #f1f1f1;
 }
 
 .dropdown-content.show{
   display: block;
-}
-
-.selected-option{
-  display: none;
-}
-
-.selected-option.show{
-  display: block;
-}
-
-.animate-in{
- animation: fadeIn 0.5s; 
-}
-
-@keyframes fadeIn{
-  from{opacity: 0;}
-  to{opacity: 1;}
 }
