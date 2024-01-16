@@ -2,21 +2,20 @@ const routeContainer = document.getElementById("routeContainer");
 const routeLabel = document.getElementById("routeLabel");
 const dropdownContent = document.getElementById("routeTypeDropdown");
 
-routeContainer.addEventListener('click', () => toggleDropdown());
-dropdownContent.addEventListener('click', (event) => selectRouteType(event));
+routeContainer.addEventListener('click', toggleDropdown);
+dropdownContent.addEventListener('click', selectRouteType);
 
 function toggleDropdown() {
     dropdownContent.classList.toggle('show');
 
     if(dropdownContent.classList.contains('show')){
-        //replace label content with dropdown items
-        routeLabel.textContent = '';
-        dropdownContent.childNodes.forEach((item) =>{
-            routeLabel.appendChild(item.cloneNode(true));
-        });
+        dropdownContent.removeChild(dropdownContent.firstChild);
     } else{
-        //reset label content
-        routeLabel.textContent = 'Round Trip';
+        const defaultOption = document.createElement('div');
+        defaultOption.classList.add('route-type-item');
+        defaultOption.dataset.routeType = 'Round Trip';
+        defaultOption.textContent = 'Round Trip';
+        dropdownContent.insertBefore(defaultOption, dropdownContent.firstChild);
     }
 }
 
@@ -24,7 +23,7 @@ function selectRouteType(event) {
     const selectedOption = event.target.dataset.routeType;
     
     if(selectedOption){
-        routeLabel.textContent = selectedOption
+        routeLabel.textContent = event.target.textContent;
         toggleDropdown();
     }
 }
